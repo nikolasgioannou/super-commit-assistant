@@ -1,0 +1,49 @@
+{
+  "name": "super-commit-assistant",
+  "version": "0.0.0",
+  "description": "AI powered git commit messages",
+  "type": "module",
+  "license": "MIT",
+  "author": "nikolasgioannou",
+  "keywords": [
+    "git",
+    "commit",
+    "ai",
+    "openrouter",
+    "cli",
+    "commit-message",
+    "developer-tools"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikolasgioannou/super-commit-assistant.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nikolasgioannou/super-commit-assistant/issues"
+  },
+  "homepage": "https://github.com/nikolasgioannou/super-commit-assistant#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "git-ai": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "npm run build && npm link",
+    "build": "tsc && chmod +x dist/cli.js",
+    "format": "prettier --write .",
+    "prepublishOnly": "tsc && chmod +x dist/cli.js",
+    "release:patch": "npm version patch && git push --follow-tags && npm publish",
+    "release:minor": "npm version minor && git push --follow-tags && npm publish",
+    "release:major": "npm version major && git push --follow-tags && npm publish"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.5",
+    "prettier": "^3.8.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
