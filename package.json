@@ -1,6 +1,6 @@
 {
   "name": "super-commit-assistant",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "AI powered git commit messages",
   "type": "module",
   "license": "MIT",
