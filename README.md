@@ -22,7 +22,9 @@ The tool will:
 
 1. Analyze your staged diff and recent commit messages
 2. Generate a commit message matching your project's style
-3. Let you **[C]ommit**, **[E]dit**, or **[A]bort**
+3. Let you **[C]ommit**, **[E]dit**, **[R]efine**, or **[A]bort**
+
+**Refine** lets you give the AI natural-language feedback (e.g., "make it shorter", "mention the API change") to regenerate the message. You can refine as many times as you like before committing.
 
 ## Configuration
 
